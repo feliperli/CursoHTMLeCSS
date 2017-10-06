@@ -8,15 +8,90 @@ header{
   align-items: center;
 }
 
-h1, h2{
+h3{
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0 0 0;
+}
+
+.listra{
+  height: 5px;
+  width: 100%;
+  background-color: black;
+
+}
+
+img{
+  max-width: 130px;
+}
+
+.gazeta img{
+  max-width: 200px;
+}
+
+
+.trabalho{
+   min-height: 50vh;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+
+}
+
+footer{
+  min-height: 3vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+}
+
+footer p{
+  color: #FFF;
+}
+
+h1, h2, h3, p{
   font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-  margin: 0 50% 0 0;
-  font-size: 50px;
+
+
+@media (max-width: 768px){
+  h1{
+    font-size: 28px;
+    margin: 0 30% 0 0;
+  }
+  h2{
+    font-size: 18px;
+    margin: 0 30% 0 0;
+    text-align: center;
+  }
+  header{
+    background-position: 50% center;
+  }
+
+  .trabalho{
+    flex-flow: column;
+  }
+  .gazeta img{
+    max-width: 120px;
+  }
+  img{
+    max-width: 70px;
+  }
 }
 
-h2{
-  margin: 0 50% 0 0;
+@media (min-width: 768px){
+  h1{
+    font-size: 45px;
+    margin: 0 32% 0 0;
+  }
+  h2{
+    font-size:28px;
+    margin: 0 32% 0 0;
+  }
+  header{
+    background-position: 50% center;
+  }
+
+
 }
